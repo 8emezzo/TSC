@@ -8,18 +8,22 @@
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
+            background-color: #333; /* Sfondo scuro */
+            color: #fff; /* Testo bianco */
         }
         h1 {
-            background-color: #007bff;
-            color: #fff;
+            background-color: #222; /* Più scuro dell'sfondo della pagina */
+            color: #4CAF50; /* Colore verde per evidenziare il titolo */
             padding: 20px 0;
             text-align: center;
             margin: 0;
+            border-bottom: 5px solid #555; /* Aggiunge un bordo per separare il titolo dal contenuto */
         }
         p {
             padding: 0 20px;
+            background-color: #444; /* Leggermente più chiaro dello sfondo per distinguerlo */
+            margin: 0;
+            border-bottom: 1px solid #555; /* Bordo per separare il paragrafo dalla lista */
         }
         ul {
             list-style-type: none;
@@ -32,25 +36,22 @@
         a {
             display: block;
             padding: 10px 20px;
-            background-color: #007bff;
+            background-color: #555; /* Colore per i link più chiaro dello sfondo */
             color: #fff;
             text-decoration: none;
             border-radius: 5px;
+            transition: background-color 0.3s ease; /* Transizione per l'effetto hover */
         }
         a:hover {
-            background-color: #0056b3;
+            background-color: #4CAF50; /* Colore verde per l'hover */
         }
     </style>
 </head>
 <body>
 
-    <h1>TSC: TradingShitCoin</h1>
-    <p>Seleziona il tuo timeframe preferito. Assicurati che la data della previsione in cima sia aggiornata quando si apre la pagina.</p>
-    <script>
-        document.addEventListener('DOMContentLoaded', (event) => {
-            document.querySelector('p').innerHTML += ` Data attuale: ${new Date().toLocaleDateString()}`;
-        });
-    </script>
+    <h1>TSC: Trading ShitCoin</h1>
+    <p>Seleziona il tuo timeframe preferito (controlla che la data della previsione sia aggiornata)</p>
+
 
     <ul>
         <li><a href="30/tsc_.html">30 minuti</a></li>
@@ -58,7 +59,7 @@
         <li><a href="120/tsc_.html">120 minuti (2 ore)</a></li>
         <li><a href="240/tsc_.html">240 minuti (4 ore)</a></li>
         <li><a href="480/tsc_.html">480 minuti (8 ore)</a></li>
-        <li><a href="1440/tsc_.html">1440 minuti (24 ore)</a></li>
+        <li><a href="1440/tsc_.html">1440 minuti (1 day)</a></li>
     </ul>
 
 </body>
