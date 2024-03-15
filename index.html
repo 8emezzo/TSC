@@ -3,11 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <title>TSC - Trading ShitCoin</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        h1 {
+            background-color: #007bff;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            margin: 0;
+        }
+        p {
+            padding: 0 20px;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        li {
+            margin: 10px 0;
+        }
+        a {
+            display: block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        a:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
 
     <h1>TSC: TradingShitCoin</h1>
-    <p>Seleziona il tuo timeframe preferito. Assicurati che la previsione sia aggiornata prima di entrare.</p>
+    <p>Seleziona il tuo timeframe preferito. Assicurati che la data della previsione in cima sia aggiornata quando si apre la pagina.</p>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            document.querySelector('p').innerHTML += ` Data attuale: ${new Date().toLocaleDateString()}`;
+        });
+    </script>
 
     <ul>
         <li><a href="30/tsc_.html">30 minuti</a></li>
