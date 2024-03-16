@@ -5,9 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Aggiunto viewport meta tag -->
     <title>TSC - Trading ShitCoin</title>
     <style>
-        body, html {
-            width: 100%; /* Assicura che html e body si adattino alla larghezza dello schermo */
-            overflow-x: hidden; /* Previene lo scrolling orizzontale se c'è overflow */
+        body {
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
@@ -15,7 +13,6 @@
             color: #fff;
             text-align: center; /* Centra il contenuto */
         }
-
         header {
             background-color: #222;
             color: #4CAF50;
@@ -45,9 +42,7 @@
             padding: 0;
         }
         li {
-            list-style-type: none;
-            padding: 10px 0; /* Aggiunto padding superiore e inferiore per ogni voce della lista */
-            text-align: center; /* Centra il testo per dispositivi mobile */
+            margin: 10px 0;
         }
         .button {
             display: inline-block; /* Permette di limitare la larghezza e centrare il pulsante */
@@ -57,7 +52,7 @@
             text-decoration: none;
             border-radius: 5px;
             margin: 0 10px;
-            width: calc(100% - 40px); /* Larghezza del pulsante calcolata per lasciare spazio al padding */
+            width: 300px; /* Larghezza fissa per i pulsanti */
         }
         .button:hover {
             background-color: #4CAF50;
