@@ -56,6 +56,20 @@
         .button:hover {
             background-color: #4CAF50;
         }
+        
+        /* Media Queries per schermi fino a 600px */
+        @media (max-width: 600px) {
+            .button {
+                width: 100%; /* I pulsanti occupano tutta la larghezza */
+                padding: 15px 0; /* Più padding per una migliore accessibilità */
+            }
+            .content, header {
+                padding: 0 10px; /* Spaziatura laterale per non attaccare ai bordi dello schermo */
+            }
+            .subtitle, .info {
+                font-size: 0.9em; /* Testo leggermente più piccolo */
+            }
+        }
     </style>
 </head>
 <body>
