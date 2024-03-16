@@ -15,7 +15,6 @@
             color: #fff;
             text-align: center; /* Centra il contenuto */
         }
-        
 
         header {
             background-color: #222;
@@ -46,7 +45,9 @@
             padding: 0;
         }
         li {
-            margin: 10px 0;
+            list-style-type: none;
+            padding: 10px 0; /* Aggiunto padding superiore e inferiore per ogni voce della lista */
+            text-align: center; /* Centra il testo per dispositivi mobile */
         }
         .button {
             display: inline-block; /* Permette di limitare la larghezza e centrare il pulsante */
@@ -56,7 +57,7 @@
             text-decoration: none;
             border-radius: 5px;
             margin: 0 10px;
-            width: 200px; /* Larghezza fissa per i pulsanti */
+            width: calc(100% - 40px); /* Larghezza del pulsante calcolata per lasciare spazio al padding */
         }
         .button:hover {
             background-color: #4CAF50;
